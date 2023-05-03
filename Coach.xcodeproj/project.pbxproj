@@ -38,7 +38,7 @@
 		ABB215E322DC7D0000424B38 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		ABB215E522DC808A00424B38 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		ABB215E722DC8ABD00424B38 /* CertificateRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateRow.swift; sourceTree = "<group>"; };
-		ABE07CBB22D74F5700D209BE /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE07CBB22D74F5700D209BE /* Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE07CBE22D74F5700D209BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE07CC022D74F5700D209BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ABE07CC222D74F5700D209BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		ABE07CB222D74F5700D209BE = {
 			isa = PBXGroup;
 			children = (
-				ABE07CBD22D74F5700D209BE /* DesignCode */,
+				ABE07CBD22D74F5700D209BE /* Coach */,
 				ABE07CBC22D74F5700D209BE /* Products */,
 				6CEE6D3A69FA847889734D2C /* AmplifyConfig */,
 			);
@@ -80,12 +80,12 @@
 		ABE07CBC22D74F5700D209BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABE07CBB22D74F5700D209BE /* DesignCode.app */,
+				ABE07CBB22D74F5700D209BE /* Coach.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABE07CBD22D74F5700D209BE /* DesignCode */ = {
+		ABE07CBD22D74F5700D209BE /* Coach */ = {
 			isa = PBXGroup;
 			children = (
 				ABE07CBE22D74F5700D209BE /* AppDelegate.swift */,
@@ -105,7 +105,7 @@
 				ABE07CCC22D74F5900D209BE /* Info.plist */,
 				ABE07CC622D74F5900D209BE /* Preview Content */,
 			);
-			path = DesignCode;
+			path = Coach;
 			sourceTree = "<group>";
 		};
 		ABE07CC622D74F5900D209BE /* Preview Content */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABE07CBA22D74F5700D209BE /* DesignCode */ = {
+		ABE07CBA22D74F5700D209BE /* Coach */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABE07CCF22D74F5900D209BE /* Build configuration list for PBXNativeTarget "DesignCode" */;
+			buildConfigurationList = ABE07CCF22D74F5900D209BE /* Build configuration list for PBXNativeTarget "Coach" */;
 			buildPhases = (
 				ABE07CB722D74F5700D209BE /* Sources */,
 				ABE07CB822D74F5700D209BE /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = DesignCode;
-			productName = DesignCode;
-			productReference = ABE07CBB22D74F5700D209BE /* DesignCode.app */;
+			name = Coach;
+			productName = Coach;
+			productReference = ABE07CBB22D74F5700D209BE /* Coach.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ABE07CB622D74F5700D209BE /* Build configuration list for PBXProject "DesignCode" */;
+			buildConfigurationList = ABE07CB622D74F5700D209BE /* Build configuration list for PBXProject "Coach" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -164,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABE07CBA22D74F5700D209BE /* DesignCode */,
+				ABE07CBA22D74F5700D209BE /* Coach */,
 			);
 		};
 /* End PBXProject section */
@@ -337,15 +337,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "DesignCode/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "Coach/Preview\\ Content";
 				DEVELOPMENT_TEAM = 55K3Q933C6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DesignCode/Info.plist;
+				INFOPLIST_FILE = Coach/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mythxn.DesignCode;
+				PRODUCT_BUNDLE_IDENTIFIER = mythxn.Coach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,15 +357,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "DesignCode/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "Coach/Preview\\ Content";
 				DEVELOPMENT_TEAM = 55K3Q933C6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DesignCode/Info.plist;
+				INFOPLIST_FILE = Coach/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mythxn.DesignCode;
+				PRODUCT_BUNDLE_IDENTIFIER = mythxn.Coach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABE07CB622D74F5700D209BE /* Build configuration list for PBXProject "DesignCode" */ = {
+		ABE07CB622D74F5700D209BE /* Build configuration list for PBXProject "Coach" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABE07CCD22D74F5900D209BE /* Debug */,
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABE07CCF22D74F5900D209BE /* Build configuration list for PBXNativeTarget "DesignCode" */ = {
+		ABE07CCF22D74F5900D209BE /* Build configuration list for PBXNativeTarget "Coach" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABE07CD022D74F5900D209BE /* Debug */,
