@@ -1,0 +1,112 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateCoach($filter: ModelSubscriptionCoachFilterInput) {
+  onCreateCoach(filter: $filter) {
+    id
+    address
+    firstName
+    lastName
+    phoneNumber
+    email
+    level
+    type
+    decsription
+    rate {
+      studentId
+      star
+      comment
+    }
+    yearOfExperience
+    paymentStatus
+    placeType
+    ageRange
+    profileImage
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateCoach($filter: ModelSubscriptionCoachFilterInput) {
+  onUpdateCoach(filter: $filter) {
+    id
+    address
+    firstName
+    lastName
+    phoneNumber
+    email
+    level
+    type
+    decsription
+    rate {
+      studentId
+      star
+      comment
+    }
+    yearOfExperience
+    paymentStatus
+    placeType
+    ageRange
+    profileImage
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteCoach($filter: ModelSubscriptionCoachFilterInput) {
+  onDeleteCoach(filter: $filter) {
+    id
+    address
+    firstName
+    lastName
+    phoneNumber
+    email
+    level
+    type
+    decsription
+    rate {
+      studentId
+      star
+      comment
+    }
+    yearOfExperience
+    paymentStatus
+    placeType
+    ageRange
+    profileImage
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateStudent($filter: ModelSubscriptionStudentFilterInput) {
+  onCreateStudent(filter: $filter) {
+    id
+    firstName
+    lastName
+    profileImage
+    ageRange
+    lesson
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateStudent($filter: ModelSubscriptionStudentFilterInput) {
+  onUpdateStudent(filter: $filter) {
+    id
+    firstName
+    lastName
+    profileImage
+    ageRange
+    lesson
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteStudent($filter: ModelSubscriptionStudentFilterInput) {
+  onDeleteStudent(filter: $filter) {
+    id
+    firstName
+    lastName
+    profileImage
+    ageRange
+    lesson
+    createdAt
+    updatedAt
+  }
+}

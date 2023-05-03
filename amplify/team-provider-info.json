@@ -1,0 +1,24 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-edumatch-staging-61724-authRole",
+      "UnauthRoleArn": "arn:aws:iam::333722799996:role/amplify-edumatch-staging-61724-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::333722799996:role/amplify-edumatch-staging-61724-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-edumatch-staging-61724-deployment",
+      "UnauthRoleName": "amplify-edumatch-staging-61724-unauthRole",
+      "StackName": "amplify-edumatch-staging-61724",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:333722799996:stack/amplify-edumatch-staging-61724/adf7a3f0-e267-11ed-b2c1-063d5c6639fe",
+      "AmplifyAppId": "d1pkr66a4c5jxs"
+    },
+    "categories": {
+      "auth": {
+        "edumatch03e42e4e": {},
+        "userPoolGroups": {}
+      },
+      "api": {
+        "edumatch": {}
+      }
+    }
+  }
+}

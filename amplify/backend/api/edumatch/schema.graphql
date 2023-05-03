@@ -1,0 +1,79 @@
+type Coach
+  @model
+  @auth(
+    rules: [
+      { allow: groups, groups: ["coach"] }
+      { allow: private }
+      { allow: public, provider: iam }
+    ]
+  ) {
+  id: ID!
+  address: String!
+  firstName: String!
+  lastName: String!
+  phoneNumber: String!
+  email: String!
+  level: String!
+  type: LessonType!
+    @index(name: "byCoachLessonType", queryField: "listCoachByLessonType")
+  decsription: String!
+  rate: [CoachRate]
+  yearOfExperience: String!
+  paymentStatus: PaymentStatus!
+    @index(name: "byCoachPaymentStatus", queryField: "listCoachByPaymentStatus")
+  placeType: PlaceType!
+    @index(name: "byCoachPlace", queryField: "listCoachByPlace")
+  ageRange: AgeRange!
+  profileImage: String
+}
+type Student
+  @model
+  @auth(
+    rules: [
+      { allow: private }
+      { allow: public, provider: iam }
+      { allow: groups, groups: ["student"] }
+    ]
+  ) {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  profileImage: String
+  ageRange: AgeRange!
+    @index(name: "byStudentAge", queryField: "listStudentByAge")
+  lesson: LessonType!
+    @index(name: "byStudentLessonType", queryField: "listStudentByLessonType")
+}
+
+enum PlaceType {
+  online
+  home
+  center
+}
+
+enum AgeRange {
+  child
+  adole
+  adult
+  everyone
+}
+
+type CoachRate {
+  studentId: ID!
+  star: Int!
+  comment: String!
+}
+
+enum LessonType {
+  yesh
+  edu
+  language
+  homework
+}
+
+enum PaymentStatus {
+  paid
+  pending
+  over
+  unpaid
+}

@@ -1,0 +1,263 @@
+# this is an auto generated file. This will be overwritten
+query GetCoach($id: ID!) {
+  getCoach(id: $id) {
+    id
+    address
+    firstName
+    lastName
+    phoneNumber
+    email
+    level
+    type
+    decsription
+    rate {
+      studentId
+      star
+      comment
+    }
+    yearOfExperience
+    paymentStatus
+    placeType
+    ageRange
+    profileImage
+    createdAt
+    updatedAt
+  }
+}
+query ListCoaches(
+  $filter: ModelCoachFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCoaches(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      address
+      firstName
+      lastName
+      phoneNumber
+      email
+      level
+      type
+      decsription
+      rate {
+        studentId
+        star
+        comment
+      }
+      yearOfExperience
+      paymentStatus
+      placeType
+      ageRange
+      profileImage
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query ListCoachByLessonType(
+  $type: LessonType!
+  $sortDirection: ModelSortDirection
+  $filter: ModelCoachFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCoachByLessonType(
+    type: $type
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      address
+      firstName
+      lastName
+      phoneNumber
+      email
+      level
+      type
+      decsription
+      rate {
+        studentId
+        star
+        comment
+      }
+      yearOfExperience
+      paymentStatus
+      placeType
+      ageRange
+      profileImage
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query ListCoachByPaymentStatus(
+  $paymentStatus: PaymentStatus!
+  $sortDirection: ModelSortDirection
+  $filter: ModelCoachFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCoachByPaymentStatus(
+    paymentStatus: $paymentStatus
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      address
+      firstName
+      lastName
+      phoneNumber
+      email
+      level
+      type
+      decsription
+      rate {
+        studentId
+        star
+        comment
+      }
+      yearOfExperience
+      paymentStatus
+      placeType
+      ageRange
+      profileImage
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query ListCoachByPlace(
+  $placeType: PlaceType!
+  $sortDirection: ModelSortDirection
+  $filter: ModelCoachFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCoachByPlace(
+    placeType: $placeType
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      address
+      firstName
+      lastName
+      phoneNumber
+      email
+      level
+      type
+      decsription
+      rate {
+        studentId
+        star
+        comment
+      }
+      yearOfExperience
+      paymentStatus
+      placeType
+      ageRange
+      profileImage
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetStudent($id: ID!) {
+  getStudent(id: $id) {
+    id
+    firstName
+    lastName
+    profileImage
+    ageRange
+    lesson
+    createdAt
+    updatedAt
+  }
+}
+query ListStudents(
+  $filter: ModelStudentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStudents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      firstName
+      lastName
+      profileImage
+      ageRange
+      lesson
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query ListStudentByAge(
+  $ageRange: AgeRange!
+  $sortDirection: ModelSortDirection
+  $filter: ModelStudentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStudentByAge(
+    ageRange: $ageRange
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      firstName
+      lastName
+      profileImage
+      ageRange
+      lesson
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query ListStudentByLessonType(
+  $lesson: LessonType!
+  $sortDirection: ModelSortDirection
+  $filter: ModelStudentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStudentByLessonType(
+    lesson: $lesson
+    sortDirection: $sortDirection
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      firstName
+      lastName
+      profileImage
+      ageRange
+      lesson
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

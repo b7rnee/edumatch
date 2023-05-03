@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "edumatch",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authedumatch03e42e4e",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
